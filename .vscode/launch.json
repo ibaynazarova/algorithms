@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/palindrome/helloworld.ts",
+            "program": "${workspaceFolder}/algorithms.ts",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ]
