@@ -1,7 +1,7 @@
 export function longestPalindromeN2Sharp(s: string): string {
     if (s.length === 1) return s;
     let maxLength = 0;
-    let center = 0;
+    let center = 0;;
 
     s = `#${s.split('').join('#')}#`;
 
