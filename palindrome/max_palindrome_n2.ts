@@ -3,7 +3,7 @@ export function getMaxPalindromeN2(s: string): string {
     let maxLength = 0;
     let maxLeft = 0;
     let maxRight = 0;
-
+  
     for (let i = 0; i < s.length; i++) {
         let length = getMaxPalindromLength(s, i, i);
         if (maxLength < length) {
