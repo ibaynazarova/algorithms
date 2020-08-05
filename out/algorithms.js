@@ -1,5 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const max_palindrome_dp_1 = require("./palindrome/max_palindrome_dp");
-console.log(max_palindrome_dp_1.longestPalindromeDp('aaa1111a'));
+const hash_1 = require("./strings/hash");
+const sort_strings_1 = require("./strings/sort_strings");
+let hasher = new hash_1.Hasher();
+hasher.getHash('qwerqwer');
+hasher.getHash('q');
+console.log(hasher.getHash('qwerqwer'));
+console.log(hasher.getHash('q'));
+let strings = [
+    'abc',
+    'cbd',
+    'cba',
+    'ab',
+    'abc',
+    'aaa',
+];
+console.log(sort_strings_1.sortStrings(strings));
 //# sourceMappingURL=algorithms.js.map
