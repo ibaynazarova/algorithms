@@ -4,6 +4,8 @@ bower_components
 
 # Ignore built ts files
 algorithms/out/**/*
+*.js
+*.map
 
 # Editor
 .vscode
