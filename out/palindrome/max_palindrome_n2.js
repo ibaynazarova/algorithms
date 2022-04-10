@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.getMaxPalindromeN2 = void 0;
 function getMaxPalindromeN2(s) {
     if (s.length === 1)
         return s;

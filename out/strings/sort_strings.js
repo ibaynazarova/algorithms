@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.sortStrings = void 0;
 const hash_1 = require("./hash");
 function sortStrings(strings) {
     const hasher = new hash_1.Hasher();

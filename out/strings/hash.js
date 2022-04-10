@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Hasher = void 0;
 class Hasher {
     constructor(base = 31, mod = Math.pow(2, 64)) {
         this.base = base;

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.longestPalindromeN2Sharp = void 0;
 function longestPalindromeN2Sharp(s) {
     if (s.length === 1)
         return s;

@@ -15,6 +15,17 @@
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ]
-        }
+        },
+        {
+            "name": "Debug Jasmine Tests",
+            "type": "pwa-node",
+            "request": "attach",
+            "port": 9229,
+            "continueOnAttach": true,
+            "autoAttachChildProcesses": false,
+            "skipFiles": [
+              "<node_internals>/**"
+            ]
+          },
     ]
 }

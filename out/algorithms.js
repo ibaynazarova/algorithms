@@ -15,5 +15,5 @@ let strings = [
     'abc',
     'aaa',
 ];
-console.log(sort_strings_1.sortStrings(strings));
+console.log((0, sort_strings_1.sortStrings)(strings));
 //# sourceMappingURL=algorithms.js.map
