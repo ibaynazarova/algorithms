@@ -1,4 +1,4 @@
-export function quickSort(array: number[], left: number, right: number) {
+export function quickSort(array: number[], left: number = 0, right: number = array.length - 1) {
     if (left >= right) return;
 
     const pivot = partition(array, left, right); // Moves pivot to its corect position and returns its index.
@@ -22,7 +22,7 @@ export function partition(array: number[], left: number, right: number): number 
     return i + 1;
 }
 
-export function quickSortHoare(array: number[], left: number, right: number) {
+export function quickSortHoare(array: number[], left: number = 0, right: number = array.length - 1) {
     if (left >= right) return;
 
     const pivot = partitionHoare(array, left, right); 
