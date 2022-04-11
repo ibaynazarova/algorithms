@@ -38,7 +38,7 @@ function partitionHoare(array: number[], left: number, right: number): number {
         while (array[left] < pivot) { left ++; }
         while (array[right] > pivot) { right --; }
 
-        swap(array, left, right);
+        if (left < right) { swap(array, left, right); }
     }
     return left;
 }
