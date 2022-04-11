@@ -6,7 +6,7 @@ export function quickSort(array: number[], left: number, right: number) {
     quickSort(array, pivot + 1, right); // Sort right subarray excluding pivot
 }
 
-function partition(array: number[], left: number, right: number): number {
+export function partition(array: number[], left: number, right: number): number {
     const pivot = array[right]; // Takes the rightmost element as pivot.
     let i = left - 1; // Stores maximum index of elements smaller than pivot.
     let j = left;
