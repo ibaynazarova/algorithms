@@ -4,17 +4,17 @@ import { Node } from './node';
 export function postorderIterative<T>(node: Node<T>): Array<T> {   
     const traversal: Array<T> = [];
     let current: Node<T>|null = node;
-    let callStack: Array<Node<T>> = [node];
+    let stack: Array<Node<T>> = [node];
     let out: Array<Node<T>> = [];
 
-    while (callStack.length !== 0) {
-        current = callStack.pop()!;
+    while (stack.length !== 0) {
+        current = stack.pop()!;
         out.push(current);
         if (current.left) {
-            callStack.push(current.left);
+            stack.push(current.left);
         }
         if (current.right) {
-            callStack.push(current.right);
+            stack.push(current.right);
         }
     }
 
@@ -39,7 +39,7 @@ export function postOrderIterativeOneStack<T>(node: Node<T>): Array<T> {
         if (current.right != null) {
             stack.push(current.right);
         }
-        
+
         stack.unshift(current);
         if (stack[stack.length - 1] === node) break;
     }
