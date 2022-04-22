@@ -4,6 +4,8 @@ import {inorderItertive} from '../bst/inorder_iterative';
 import {inorderMorris} from '../bst/inorder_morris';
 import {preorder} from '../bst/preorder';
 import {preorderIterative} from '../bst/preorder_iterative';
+import {postorder} from '../bst/postorder';
+import {postorderIterative, postOrderIterativeOneStack} from '../bst/postorder_iterative';
 
 /**
  *       9
@@ -64,5 +66,23 @@ describe('BST', () => {
         const traversal: number[] = preorderIterative(root!);
 
         expect(traversal).toEqual([9,2,1,3,7,6,4,5,8,10]);
+    });
+
+    it('postorder - recursive', () => {
+        const traversal: number[] = postorder(root!);
+
+        expect(traversal).toEqual([1,5,4,6,8,7,3,2,10,9]);
+    });
+
+    it('postorder - iterative', () => {
+        const traversal: number[] = postorderIterative(root!);
+
+        expect(traversal).toEqual([1,5,4,6,8,7,3,2,10,9]);
+    });
+
+    it('postorder - iterative with one stack', () => {
+        const traversal: number[] = postOrderIterativeOneStack(root!);
+
+        expect(traversal).toEqual([1,5,4,6,8,7,3,2,10,9]);
     });
 });
